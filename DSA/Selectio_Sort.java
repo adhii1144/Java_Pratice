@@ -1,6 +1,7 @@
 package DSA;
+import DSA.Sort;
 
-public class Sortings {
+public class Selectio_Sort {
     public static void selection_sort(int arr[]){
         int n = arr.length;
         int smin =0;
@@ -13,10 +14,9 @@ public class Sortings {
             arr[smin] = arr[i];
             arr[i] = temp;
         }
-        for(int ele : arr){
-            System.out.print(ele +" ");
-        }
+        Sort.sort_Array(arr);
     }
+    
     public static void main(String[] args) {
         int arr[] = {5,4,3,2,1};
         selection_sort(arr);
